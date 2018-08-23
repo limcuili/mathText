@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<h2>Add a new module to our database</h2>
+<label for="code">Module code: </label>
+<input id="code"><br>
+<label for="name">Module name: </label>
+<input id="name"><br>
+<label for="lecturer">Lecturer: </label>
+<input id="lecturer"><br>
+<label for="prerequisites">Prerequisite modules: </label>
+<input id="prerequisites"><br>
+<label for="assessment">Assessment: </label>
+<input id="assessment"><br>
+<label for="structure">Structure: </label>
+<input id="structure"><br>
+<label for="syllabus_1">Syllabus topic 1: </label>
+<input id="syllabus_1"><br>
+<label for="syllabus_2">Syllabus topic 2: </label>
+<input id="syllabus_2"><br>
+<label for="syllabus_3">Syllabus topic 3: </label>
+<input id="syllabus_3"><br>
+<label for="syllabus_4">Syllabus topic 4: </label>
+<input id="syllabus_4"><br>
+<label for="syllabus_5">Syllabus topic 5: </label>
+<input id="syllabus_5"><br>
+<label for="syllabus_6">Syllabus topic 6: </label>
+<input id="syllabus_6"><br>
+<label for="syllabus_7">Syllabus topic 7: </label>
+<input id="syllabus_7"><br>
+<label for="syllabus_8">Syllabus topic 8: </label>
+<input id="syllabus_8"><br>
+<label for="syllabus_9">Syllabus topic 9: </label>
+<input id="syllabus_9"><br>
+<label for="syllabus_10">Syllabus topic 10: </label>
+<input id="syllabus_10"><br>
+<label for="syllabus_11">Syllabus topic 11: </label>
+<input id="syllabus_11"><br>
+<label for="syllabus_12">Syllabus topic 12: </label>
+<input id="syllabus_12"><br>
+<label for="recommended_text_1"> Recommended Text 1: </label>
+<input id="recommended_text_1"><br>
+<label for="recommended_text_2"> Recommended Text 2: </label>
+<input id="recommended_text_2"><br>
+<label for="recommended_text_3"> Recommended Text 3: </label>
+<input id="recommended_text_3"><br>
+<label for="recommended_text_4"> Recommended Text 4: </label>
+<input id="recommended_text_4"><br>
+<label for="recommended_text_5"> Recommended Text 5: </label>
+<input id="recommended_text_5"><br>
+<label for="recommended_text_6"> Recommended Text 6: </label>
+<input id="recommended_text_6"><br>
+<label for="recommended_text_7"> Recommended Text 7: </label>
+<input id="recommended_text_7"><br>
+
+<button id="createModule" onclick="createModule()">Submit</button>
+
+<script src="https://www.gstatic.com/firebasejs/5.4.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyArHF3S6kI7R5gwnYLA2M355KyIgEnxjjo",
+    authDomain: "ucl-bsc-mathematics-course.firebaseapp.com",
+    databaseURL: "https://ucl-bsc-mathematics-course.firebaseio.com",
+    projectId: "ucl-bsc-mathematics-course",
+    storageBucket: "ucl-bsc-mathematics-course.appspot.com",
+    messagingSenderId: "623017141147"
+  };
+  firebase.initializeApp(config);
+</script>
+
+<script src="addToDatabase.js"></script>
+
+</html>
