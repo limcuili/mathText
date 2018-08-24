@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
 
+<style>
+body {background-color: powderblue;}
+</style>
+
 <h2>Add a new module to our database</h2>
 <label for="code">Module code: </label>
 <input id="code"><br>
@@ -55,16 +59,26 @@
 
 <button id="createModule" onclick="createModule()">Submit</button>
 
-<script src="https://www.gstatic.com/firebasejs/5.4.0/firebase.js"></script>
+<!--Want to create functions to adding recommended text and syllabus topics.
+Need to extract "syllabus" array from database, and push value into it.
+If there does not exist a syllabus field yet, must initialize as an array-->
+
+<!-- <label for="moduleCode">Module code: </label>
+<input id="moduleCode"><br>
+<label for="topic">One topic of the syllabus: </label>
+<input class="topic"><br>
+<button id="addSyllabus" onclick="addSyllabus()">Add</button> -->
+
+<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase.js"></script>
 <script>
   // Initialize Firebase
   var config = {
-    apiKey: "AIzaSyArHF3S6kI7R5gwnYLA2M355KyIgEnxjjo",
-    authDomain: "ucl-bsc-mathematics-course.firebaseapp.com",
-    databaseURL: "https://ucl-bsc-mathematics-course.firebaseio.com",
-    projectId: "ucl-bsc-mathematics-course",
-    storageBucket: "ucl-bsc-mathematics-course.appspot.com",
-    messagingSenderId: "623017141147"
+    apiKey: "AIzaSyBYGLc8UJwo99VK8C5AwPjPAEevL0awMGY",
+    authDomain: "ucl-bsc-mathematics-modules.firebaseapp.com",
+    databaseURL: "https://ucl-bsc-mathematics-modules.firebaseio.com",
+    projectId: "ucl-bsc-mathematics-modules",
+    storageBucket: "ucl-bsc-mathematics-modules.appspot.com",
+    messagingSenderId: "249538304239"
   };
   firebase.initializeApp(config);
 </script>
